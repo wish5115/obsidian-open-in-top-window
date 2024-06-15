@@ -27,15 +27,17 @@
 
 2. 命令打开，选择”在置顶窗口中打开当前文件“或”移动当前文件到置顶窗口中“命令打开即可。
 
-3. 外部链接打开，通过协议`obsidian://open-in-top-window?vault=demo&file=todo.md`在置顶窗口中打开指定文件。
+3. 外部链接打开，通过协议`obsidian://open-in-top-window?vault=demo&file=todo.md`在置顶窗口中打开指定文件，具体参数可参考[main.js#L249](https://github.com/wish5115/obsidian-open-in-top-window/blob/49d8719153b2c55c6acd86fd6ce3e0fb36d89055/main.js#L249)
 
-4. api调用：`app.plugins.plugins['open-in-top-window'].openInTopWindow(file, settings)`
+4. api调用：`app.plugins.plugins['open-in-top-window'].openInTopWindow(file, settings)`，具体参数可参考[main.js#L70](https://github.com/wish5115/obsidian-open-in-top-window/blob/49d8719153b2c55c6acd86fd6ce3e0fb36d89055/main.js#L70)
 
 # 截图
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/zh-menu.png)
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/zh-cmd.png)
+
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/zh-open-link.png)
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/zh-settings.png)
 

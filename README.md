@@ -31,15 +31,17 @@ You can also search and install the plugin in obsidian's plugin market. (Not yet
 
 2. Command to open, select "Open current tab in top window" or "Move current tab to top window".
 
-3. Open by external link, through the protocol `obsidian://open-in-top-window?vault=demo&file=todo.md` to open the specified file in the top window.
+3. Open by external link, through the protocol `obsidian://open-in-top-window?vault=demo&file=todo.md` to open the specified file in the top window, parameters can be referred to [main.js#L249](https://github.com/wish5115/obsidian-open-in-top-window/blob/49d8719153b2c55c6acd86fd6ce3e0fb36d89055/main.js#L249)
 
-4. api call：`app.plugins.plugins['open-in-top-window'].openInTopWindow(file, settings)`
+4. api call：`app.plugins.plugins['open-in-top-window'].openInTopWindow(file, settings)`, parameters can be referred to [main.js#L70](https://github.com/wish5115/obsidian-open-in-top-window/blob/49d8719153b2c55c6acd86fd6ce3e0fb36d89055/main.js#L70)
 
 # Screenshot
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/en-menu.png)
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/en-cmd.png)
+
+![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/en-open-link.png)
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/en-settings.png)
 
