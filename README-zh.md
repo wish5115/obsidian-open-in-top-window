@@ -29,6 +29,8 @@
 
 3. 外部链接打开，通过协议`obsidian://open-in-top-window?vault=demo&file=todo.md`在置顶窗口中打开指定文件。
 
+4. api调用：`app.plugins.plugins['open-in-top-window'].openInTopWindow(file, settings)`
+
 # 截图
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/zh-menu.png)

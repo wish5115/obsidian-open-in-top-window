@@ -33,6 +33,8 @@ You can also search and install the plugin in obsidian's plugin market. (Not yet
 
 3. Open by external link, through the protocol `obsidian://open-in-top-window?vault=demo&file=todo.md` to open the specified file in the top window.
 
+4. api call：`app.plugins.plugins['open-in-top-window'].openInTopWindow(file, settings)`
+
 # Screenshot
 
 ![](https://cdn.jsdelivr.net/gh/wish5115/obsidian-open-in-top-window@main/screenshots/en-menu.png)
