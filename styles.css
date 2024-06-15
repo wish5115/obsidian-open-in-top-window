@@ -1,0 +1,63 @@
+/* settings styles */
+.window-size input[type=number] {
+	width: 100px;
+}
+.window-pos input[type=number] {
+	width: 100px;
+}
+.custom-style textarea{
+	width: 420px;
+    height: 200px;
+}
+
+/* 打开新窗口样式 */
+.open-in-top-window {
+	/* 隐藏标题 */
+	&.hide-title .inline-title,
+	/* 隐藏导航 */
+	&.hide-nav .view-header,
+	/* 隐藏标签页 */
+	&.hide-tab-header .workspace-tab-header-container,
+	/* 隐藏导航工具栏 */
+	&.hide-nav-toolbar .view-header-nav-buttons,
+	&.hide-nav-toolbar .view-actions
+	{
+		display: none;
+	}
+	/* 修改标题栏为拖动 */
+	&.nav-draggable .view-header {
+		-webkit-app-region: drag;
+	}
+	.mod-macos &.nav-draggable .view-header {
+		padding-left: 72px;
+	}
+	/* 导航按钮动态显示 */
+	&.nav-draggable .view-actions > :not(:nth-last-child(-n+2)){
+		display: none;
+	}
+	&.nav-draggable .view-actions:hover > :not(:nth-last-child(-n+2)){
+		display: flex;
+	}
+	/* 导航改为absolute层 */
+	&.nav-draggable .view-header-title-container{
+		padding-right: 56px;
+	}
+	&.nav-draggable .view-actions{
+		position: absolute;
+		right: 5px;
+		top: 7px;
+		background-color: var(--background-primary);
+	}
+	/* 修改标签页为适应内容宽度 */
+	&:not(.hide-tab-content)  .workspace .mod-root .workspace-tab-header{
+		width: 100px;
+	}
+	/* 修改编辑器边距 */
+	& .view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+		padding: 15px;
+		overflow-x: hidden;
+	}
+	& .workspace-leaf-content .floating-toc-div:is(.floating-left,.floating-both)+.markdown-source-view>.cm-editor{
+		padding-left: 0;
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "id": "open-in-top-window",
+  "name": "Open in top window",
+  "version": "0.0.1",
+  "minAppVersion": "1.5.8",
+  "description": "Open the file in the top window.",
+  "author": "Wilson",
+	"authorUrl": "https://github.com/wish5115",
+	"helpUrl": "https://github.com/wish5115/obsidian-open-in-top-window",
+  "isDesktopOnly": true
+}
